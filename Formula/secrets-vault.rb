@@ -4,7 +4,7 @@
 class SecretsVault < Formula
   desc "Command-line secrets manager with per-vault keys and Touch ID unlock"
   homepage "https://github.com/Arntek/secrets-vault"
-  version "0.1.0" # render-formula:version
+  version "0.2.0" # render-formula:version
   license "MIT"
 
   # BASE is the release download folder; render-formula.sh can point it at a
@@ -14,22 +14,22 @@ class SecretsVault < Formula
   on_macos do
     on_arm do
       url "#{base}/secrets-vault_#{version}_darwin_arm64.tar.gz"
-      sha256 "8958a3a3fca4fd71e24a2813d9b1db3c378e063df6b8c4e160c361f6dae11334" # render-formula:darwin_arm64
+      sha256 "75b7a99433e7a6feaa9a865f1a32fcff008ded62cdd64566d09f29095647dfdf" # render-formula:darwin_arm64
     end
     on_intel do
       url "#{base}/secrets-vault_#{version}_darwin_amd64.tar.gz"
-      sha256 "89b12b25fcec2c78f4e5f8cd2b9533e3b83edcc0cc11e4d012a3fd4d2d318490" # render-formula:darwin_amd64
+      sha256 "69a05e52de1aadc01f7427958d73ebf0d9d7d8fadf397ff26623cc6ad8f75c2f" # render-formula:darwin_amd64
     end
   end
 
   on_linux do
     on_arm do
       url "#{base}/secrets-vault_#{version}_linux_arm64.tar.gz"
-      sha256 "11738c358f18486c5c1b433726310251dcaaab87f1abfb897daaf36494422e9e" # render-formula:linux_arm64
+      sha256 "6f1eec907495137e9adb5887dbde117237f05d8e56a2c7083b01d4d272273337" # render-formula:linux_arm64
     end
     on_intel do
       url "#{base}/secrets-vault_#{version}_linux_amd64.tar.gz"
-      sha256 "0eb0da30de0db88e4fbcae0cea9cfba16b405cf9b2f9df0fc921ae198899b769" # render-formula:linux_amd64
+      sha256 "2e64f0dafb4a37a2a8a4c916c7b668e63b6636d6988497f4f5962e7c86bf2596" # render-formula:linux_amd64
     end
   end
 
